@@ -1,0 +1,335 @@
+/*base styles*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f6ff;
+}
+
+h1,
+h2,
+h4 {
+  font-family: 'Monsterrat', sans-serif;
+}
+
+a,
+p {
+  font-family: tahoma, sans-serif;
+}
+
+/*site styles*/
+.site {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 0 15px;
+  max-width: 1200px;
+}
+
+.header {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 0 60px;
+}
+
+.content {
+  flex: 1;
+}
+
+/*header styles*/
+.header-name {
+  color: #2f003a;
+  font-size: 50px;
+  font-weight: 700;
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+
+.header-description {
+  color: #8b6da5;
+  font-family: tahoma, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: right;
+}
+
+@media only screen and (max-width: 767px) {
+  .header {
+    padding: 0 30px;
+  }
+
+  .header-name {
+    font-size: 36px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header {
+    padding: 0 0;
+  }
+
+  .header-logo {
+    height: auto;
+    width: 75px;
+  }
+
+  .header-info {
+    flex: 1;
+  }
+
+  .header-name {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .header-description {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+/*intro styles*/
+.intro {
+  background-image: url(../img/hero-image.jpg);
+  background-size: cover;
+  margin: 60px -15px 20px;
+  height: 300px;
+}
+
+.intro-overlay {
+  background-color: rgba(55, 31, 74, 0.6);
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 50px 30px;
+}
+
+.intro-header {
+  color: #fff;
+  font-size: 42px;
+  letter-spacing: 7px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.intro-text {
+  background-color: rgba(54, 36, 68, 0.5);
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 0.3px;
+  line-height: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .intro {
+    text-align: center;
+  }
+
+  .intro-overlay {
+    padding: 30px;
+  }
+
+  .intro-header {
+    font-size: 32px;
+  }
+
+  .intro-text {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .intro {
+    margin-top: 20px;
+  }
+
+  .intro-overlay {
+    padding: 15px;
+  }
+
+  .intro-header {
+    font-size: 24px;
+    letter-spacing: 4px;
+    line-height: 36px;
+  }
+
+  .intro-text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+/*works styles*/
+.works-title {
+  color: #2f003a;
+  font-size: 28px;
+  line-height: 36px;
+  margin: 96px 60px 10px;
+}
+
+.works-description {
+  color: #8b6da5;
+  font-size: 16px;
+  line-height: 28px;
+  margin: 0 60px 48px;
+}
+
+.work-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 30px;
+}
+
+.work-item {
+  background: url(http://i.telegraph.co.uk/multimedia/archive/02407/stock-market-figur_2407759b.jpg) no-repeat center center;
+  border-radius: 25%;
+  border: 10px solid #e4dbe6;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  cursor: pointer;
+  height: 290px;
+  overflow: hidden;
+  width: 290px;
+}
+
+.work-item-resume {
+  background: url(http://www.amsterdaily.nl/wordpress/wp-content/uploads/2015/04/taxi-smartcab.png) no-repeat center center;
+}
+
+.work-item-arcade {
+  background: url(http://wp.streetwise.co/wp-content/uploads//2014/12/Screen-Shot-2014-12-08-at-8.31.22-AM1.png) no-repeat center center;
+}
+
+.work-item-optimize {
+  background: url(http://www.abbreviations.com/images/1730973_ASIS.png) no-repeat center center;
+}
+
+.work-item-map {
+  background: url(http://d3t0dn7puh4fxw.cloudfront.net/wp-content/uploads/2014/01/webservices-thumbnail.png) no-repeat center center;
+}
+
+.work-item-reader {
+  background: url(http://www.extremetech.com/wp-content/uploads/2011/12/facial-recognition-markers-640x353.jpg) no-repeat center center;
+}
+
+.work-overlay {
+  display: block;
+  height: 270px;
+  width: 270px;
+}
+
+.work-info {
+  background-color: rgba(20, 5, 41, 0.76);
+  cursor: default;
+  height: 110px;
+  text-align: center;
+  transition: margin-top 0.5s ease;
+}
+
+.work-title {
+  color: #fff;
+  font-size: 18px;
+  line-height: 25px;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.work-tags {
+  font-size: 15px;
+  color: #fff;
+}
+
+@media only screen and (min-width: 1025px) {
+  .work-item {
+    border-color: #e4dbe6;
+    margin: 0 15px 40px;
+    transition: all 0.5s ease;
+  }
+
+  .work-item:hover {
+    border-color: #2f003a;
+    transition: all 0.5s ease;
+  }
+
+  .work-overlay {
+    background-color: rgba(173, 173, 173, 0.5);
+    transition: all 0.5s ease;
+  }
+
+  .work-item:hover .work-overlay {
+    background-color: transparent;
+    transition: all 0.5s ease;
+  }
+
+  .work-info {
+    margin-top: 0;
+  }
+
+  .work-item:hover .work-info {
+    margin-top: -110px;
+    transition: margin-top 0.5s ease;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .work-item {
+    border-color: #2f003a;
+    margin-bottom: 40px;
+  }
+
+  .work-overlay {
+    background-color: transparent;
+  }
+
+  .work-info {
+    margin-top: -110px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .works-title {
+    margin: 64px 30px 10px;
+  }
+
+  .works-description {
+    margin: 0 30px 36px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .works-title {
+    margin: 32px 0 10px;
+  }
+
+  .works-description {
+    margin: 0 0 18px;
+  }
+
+  .work-wrapper {
+    padding: 0;
+  }
+}
+
+/*footer styles*/
+.footer {
+  background-color: #2f003a;
+  color: #fff;
+  margin: 40px -15px 0;
+  padding: 0 60px;
+}
+
+@media only screen and (max-width: 480px) {
+  .footer {
+    padding: 0 15px;
+  }
+}
