@@ -15,7 +15,15 @@ This repository contains project work for Udacity's [Full Stack Web Developer Na
 
 ### Courses
 - Programming Foundations with Python
+- Responsive Web Design Fundamentals
+- Intro to HTML and CSS
+- Responsive Images
+- Intro to Backend
 - Intro to Relational Databases
 - Full Stack Foundations
+- Authentication & Authorization: OAuth
+- Intro to AJAX
+- JavaScript Design Patterns
 - Developing Scalable Apps with Python
-- Linux Basics for Web Developers
+- Configuring Linux Web Servers
+- Linux Command Line Basics
