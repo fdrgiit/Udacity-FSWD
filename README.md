@@ -11,7 +11,7 @@ This repository contains project work for Udacity's [Full Stack Web Developer Na
 - **p5** - Item Catalog
 - **p6** - Neighborhood Map
 - **p7** - Design a Game(Currently Working)
-- **p8** - Linux Server Configuration(Currently Working)
+- **p8** - Linux Server Configuration
 
 ### Courses
 - Programming Foundations with Python
