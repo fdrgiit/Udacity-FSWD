@@ -1,0 +1,196 @@
+/* border-sizing */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body, .wrapper {
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+#search-form {
+  color: black;
+  padding: 8px;
+  text-align: center;
+  width: 100%;
+}
+
+#search-input {
+  width: 260px;
+}
+
+#search-summary {
+  display: block;
+  color: white;
+  margin: 8px;
+}
+
+.corner-name {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 80%;
+}
+
+.meetup-info {
+  float: right;
+  width: 60px;
+}
+
+.meetup-icon {
+  height: 24px;
+}
+
+/* list */
+#list {
+  padding: 0;
+}
+
+#list li {
+  font-size: 16px;
+  list-style-type: none;
+  padding: 8px;
+}
+
+#list li:hover {
+  cursor: pointer;
+  color: black;
+  background: #E44E49;
+}
+
+header, aside {
+  background: rgba(0,0,0,0.75);
+  color: white;
+  margin: 0;
+  padding: 8px;
+  position: absolute;
+  width: 350px;
+}
+
+header {
+  height: 100px;
+  top: 0;
+  left: 0;
+}
+header h1 {
+  color: #E44E49;
+  font-size: 24px;
+  margin: 0;
+  text-align: center;
+}
+
+#map { height: 100%;}
+
+.search-title {
+	margin: 5px;
+	font-size: 25px;
+}
+
+.sp-icon {
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+}
+
+aside {
+	top: 0;
+	right: 0;
+	height: 100%;
+	overflow: scroll;
+	padding: 8px;
+}
+
+ul {
+	padding: 0;
+}
+
+.meetup:hover {
+	color: black;
+	background-color: #D84040;
+	cursor: pointer;
+}
+
+.meetup {
+	font-size: 20px;
+	padding: 8px;
+	list-style-type: none;
+}
+
+.meet-name {
+	display: inline-block;
+	width: 80%;
+	left: 10px;
+	height: 100%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+
+}
+
+.meet-number {
+	display: inline-block;
+	width: 10%;
+	right: 0;
+}
+
+.info-header {
+	font-weight: bold;
+}
+
+.info-loc {
+	color: rgba(0, 0, 0, 0.8);
+	padding: 0;
+	margin: 0;
+
+}
+
+a {
+	text-decoration: none;
+	color: #43ADC5;
+}
+
+.info-li {
+	display: list-item;
+	list-style: circle;
+	margin-bottom: 2px;
+}
+
+@media only screen and (max-width: 750px) {
+	header {
+		height: 40%;
+		width: 100%;
+		position: static;
+		background-color: black;
+	}
+
+	aside {
+		height: 200px;
+		width: 100%;
+		position: static;
+		overflow: scroll;
+	}
+
+  .mobile-container {
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    background: pink;
+    position: fixed;
+    height: 40%;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+  }
+
+	#map {
+		height: 60%;
+	}
+
+	#container {
+		height: 40%;
+	}
+}

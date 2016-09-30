@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>NJ Programming MeetUps</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="img/thumbnail.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/application.css" />
+  <script>
+function googleError() {
+    alert('The image could not be loaded.');
+}
+</script>
+</head>
+<body>
+	<div class="wrapper">
+		<div id="map"><span id="errorMsg"></span></div>
+		<div class="mobile-container">
+			<header>
+        <h1>
+          NJ Programming MeetUp
+        </h1>
+				<form id="search-form" data-bind="submit: search">
+					<input data-bind="value: inputStr" id="search-input" placeholder="Search" autofocus />
+					<button id="search-button" type="submit">
+						<span class="fa fa-search"></span>
+					</button>
+          <p id="search-summary">
+            <span data-bind="text: numCorners"></span>
+            MeetUps
+          </p>
+				</form>
+			</header>
+			<aside>
+				<ul id="list" data-bind="foreach: {data : positionsShowed, as : 'pos'}">
+					<li class="meetup" data-bind="click: $root.selectPos">
+						<span class="corner-name" data-bind="text: name"></span>
+            <div class="meetup-info">
+            	<span data-bind="text: length"></span>
+              <!--<span data-bind="text: corner.meetups().length"></span>-->
+              <img class="meetup-icon" src="img/meetuplogo1000.png" />
+            </div>
+						<!--<span class="meet-number" data-bind="text: length"></span>-->
+					</li>
+				</ul>
+			</aside>
+		</div>
+	</div>
+  <script src="lib/jquery-2.1.3.min.js"></script>
+  <script src="lib/bootstrap.min.js"></script>
+  <script src="lib/knockout-3.2.0.min.js"></script>
+  <script>function googleError() { alert("Sorry!! Google Maps cannot be loaded");}</script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBDG4PEiSz4kfikxfuEJvSZ33PWp5HPJM&callback=initMap" onerror="googleError()"></script>
+	<script src="js/application.js"></script>
+</body>
+</html>
