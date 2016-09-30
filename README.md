@@ -10,7 +10,7 @@ This repository contains project work for Udacity's [Full Stack Web Developer Na
 - **p4** - Tournament Results
 - **p5** - Item Catalog
 - **p6** - Neighborhood Map
-- **p7** - Design a Game(Currently Working)
+- **p7** - Design a Game
 - **p8** - Linux Server Configuration
 
 ### Courses
